@@ -1,0 +1,124 @@
+
+/* mobile */
+@media screen and (max-width:  46.1875em) {
+    /* common */
+    .s-full-witch,
+    .s-col-item {
+        width: 100%;
+    }
+    /* --------------- */
+    #header {
+    overflow: hidden;
+    }
+    #nav-list {
+        display: block;
+    }
+    #nav-list li {
+        display: block;
+    }
+    #nav-list > li > a {
+        padding: 1px 24px;
+    }
+    #nav-list > li:first-child {
+        display: inline-block;
+    }
+    .sub-nav {
+        position: initial;
+        width: 100%;
+        background-color: #333;
+    }
+    .sub-nav li {
+        border-bottom: .2px solid #bbb ;
+    }
+    .sub-nav li:last-child {
+        border-bottom: none;
+    }
+    .sub-nav li a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #search-icon {
+        display: none;
+    }
+    .layout-section {
+        width: 100%;
+    }
+    .img-member {
+        width: 60%;
+    }
+}
+/* tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+        .layout-section {
+            width: 100%;
+        }
+    }
+
+/* tablet & mobile */
+@media  screen and (max-width: 1023px) {
+    #text-container {
+        bottom: 10px;
+    }
+    #slider-heading {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+    #slider-description {
+        font-weight: 450;
+        margin: 5px 0;
+    }
+    .buy-ticket-btn {
+        padding: 15px 16px;
+    }
+    #contact .form-send-btn {
+        padding: 15px 16px;
+    }
+    #footer .social-list a {
+        font-size: 48px;
+        padding: 0 10px;
+        display: inline-block;
+    }
+    #footer p {
+        font-size: 30px;
+    }
+    #footer p a {
+        padding: 10px;
+    }
+    #contact .paragraph-contact {
+        line-height: 2;
+        margin-bottom: 8px;
+    }
+    #contact .paragraph-contact p a {
+        padding: 5px 2px;
+    }
+    .modal-label {
+        font-size: 15px;
+    }
+    .modal-input {
+        font-size: 15px;
+        padding: 14.5px 8px;
+    }
+    #modal-pay {
+        font-size: 15px;
+        padding: 15.5px;
+        margin: 25px 0 15px;
+    }
+    #modal-footer {
+        font-size: 18px;
+    }
+    #modal-footer p a {
+        padding: 13px 2px;
+    }
+}
+
+/*  pc */
+    @media screen and (min-width: 64em) {
+    }
+

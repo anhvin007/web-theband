@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-family:Helvetica , Arial, sans-serif;
+    scroll-behavior: smooth;
+
+}
+/* common */
+.pd-32 {
+    padding-top: 32px !important;
+}
+.pb-32 {
+    padding-bottom: 32px !important;
+}
+.pt-32 {
+    padding-top: 32px !important;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.clear {
+    clear: both;
+}
+.color-white {
+    color: #fff !important;
+}
+.color-icon {
+    color: #000 !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.modal.open {
+    display: flex;
+}
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 0 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.33333%;
+    width: 1;
+}
+/* keyframe */
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.1;
+        transform: translateY(-600px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* main */
+#header {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 46px;
+}
+
+/* begin nav list */
+#nav-list, .sub-nav {
+    list-style: none;
+}
+#nav-list {
+    display: inline-block;
+}
+#nav-list >li {
+    display: inline-block;
+    position: relative;
+}
+#nav-list > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+    line-height: 46px;
+
+}
+#nav-list li a {
+    text-decoration: none;
+    display: block;
+}
+#nav-list li:hover .sub-nav {
+    display: block;
+}
+.sub-nav li:hover a, 
+#nav-list > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+.sub-nav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 160px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.sub-nav li {
+    display: block;
+}
+.sub-nav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+/* end nav list */
+
+
+/* search icon && menu */
+
+#search-icon {
+    float: right;
+}
+#mobile-menu-btn {
+    float: right;
+    height: 46px;
+    display: none;
+}
+#mobile-menu-btn .ti-menu,
+#search-icon .icon-search {
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+}
+#search-icon:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+#mobile-menu-btn:hover .ti-menu {
+    color: #000;
+}
+/*  begin slider */
+#slider {
+    margin-top: 46px;
+    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+#text-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    text-align: center;
+}
+#slider-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    
+}
+#slider-description {
+    margin: 15px 0;
+    font-weight: 600;
+    color:beige;
+    font-style: italic;
+
+}
+/*  end slider */
+
+/*  begin layout-section */
+.layout-section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+.heading-section {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-weight: 450;
+    text-align: center;
+
+}
+.slogan-section {
+    margin-top: 16px;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+
+}
+/*  end layout-section */
+
+#paragraph {
+    line-height: 1.4;
+    text-align: justify;
+    margin-top: 16px;
+}
+
+/*  begin info-member */
+.name-member {
+    padding-bottom: 15px;
+}
+.member-container {
+    margin-top: 32px ;
+}
+.img-member {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/*  end info-member */
+
+/*  begin Tour Dates */
+#background-tour-dates {
+    background-color: #000;
+    min-height: 500px;
+    width: 100%;
+}
+/*  month-tour */
+#month-tour {
+    margin-top: 16px;
+    background-color: #fff;
+    list-style: none;
+}
+#month-tour li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+
+}
+#month-tour .sold-out {
+    background-color: #f44336;
+    margin-left: 16px;
+    padding:2px 8px;
+    color: #fff;
+}
+#month-tour #number-3 {
+    float: right;
+    margin-right: 16px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 6px;
+}
+/*  place-tour */
+.place-tour-container {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    margin-top: -3.15px;
+}
+.img-tour {
+    width: 100%;
+}
+.img-tour:hover {
+    opacity: 0.6;
+}
+.body-tour {
+    background-color: #fff;
+    margin-top: -2.56px;
+    padding: 15px 16px;
+}
+.heading-tour {
+    font-weight: 700;
+}
+.time-tour {
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.about-tour {
+    margin-top: 15px;
+}
+.buy-ticket-btn {
+    font-size: 15px;
+    border: none;
+    margin-top: 15px;
+    padding: 14px 16px;
+    background-color: #000;
+    color: #fff;
+}
+.buy-ticket-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/*  end tour dates */
+
+
+/*  begin modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container {
+    width: 900px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn ease .5s;
+}
+.button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 52px;
+    display: flex;
+    cursor: pointer;
+}
+.button-close:hover .ti-close,
+.button-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.ti-close {
+    margin: auto;
+    color: #fff;
+}
+#modal-header {
+    background-color: #009688;
+    padding: 42px 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 600px;
+}
+#modal-body {
+    background-color: #fff;
+    padding: 0 16px 15px;
+}
+.modal-label {
+    padding-top: 30px;
+    display: block;
+}
+.modal-input {
+    margin-top: 10px;
+    padding: 11px 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+#modal-pay {
+    padding: 19px;
+    margin: 15px 0;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+}
+#modal-pay:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+#modal-footer {
+    display: flex;
+    justify-content: end;
+    padding: 1px 16px 32px;
+    background-color: #fff;
+}
+#modal-footer a {
+    color: #2196F3;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#modal-footer a:hover {
+    opacity: 1;
+}
+/*  end modal */
+
+/*  begin contact */
+
+.paragraph-contact {
+    font-size: 18px;
+    line-height: 2;
+}
+.paragraph-contact p a {
+    color: #0000f1;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.paragraph-contact p a:hover {
+    opacity: 1;
+}
+.paragraph-contact i[class*="ti-"] {
+    width: 20px;
+    display: inline-block;
+}
+.form-control {
+    font-size: 15px;
+    padding: 11.5px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+#contact .form-send-btn {
+    padding: 13px 16px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    margin-bottom: 16px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+#contact .form-send-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#contact .form-send-btn:active {
+    margin-top: 15px;
+}
+/* map */
+#map-container 
+#map {
+    width: 100%;
+}
+/*  begin footer */
+#footer {
+    padding: 64px 16px 32px;
+    text-align: center;
+    opacity: 0.6;
+}
+#footer .social-list  {
+    padding: 0 10px;
+    font-size: 20px;
+}
+#footer .social-list  a {
+    text-decoration: none;
+}
+#footer  a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+#footer p {
+    margin: 15px 0;
+}
+#footer a {
+    color: #000;
+}
